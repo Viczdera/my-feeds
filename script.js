@@ -3,7 +3,6 @@ const container = document.querySelector("#container");
 const select = document.getElementById("select");
 const center = document.getElementById("center");
 
-// const key = "5613429-93ade0f98fdba78881baab188";
 var category = "technology";
 fetchFromAPI();
 
