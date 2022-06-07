@@ -27,7 +27,7 @@ async function fetchFromAPI(x) {
   }
   data = res.data;
   data.forEach((d) => {
-    container.innerHTML += `<div class="xxxx">
+    container.innerHTML += `<div class="card col">
         <img class="img-fluid" src="${d.imageUrl}" />
         <div >
             <p>Title: ${d.title}</p>
@@ -37,9 +37,3 @@ async function fetchFromAPI(x) {
     </div>`;
   });
 }
-
-// search.addEventListener('keyup', (e) => {
-//     if (e.keyCode === 13) {
-//         fetchFromAPI(search)
-//     }
-// })

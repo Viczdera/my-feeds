@@ -15,16 +15,23 @@ body {
     max-width: 100%;
 }
 
-.xxxx {
-    height: auto;
-    max-width: 300px;
+.card {
+    width: 50%;
+  min-width: 200px !important;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: rgba(227, 228, 230, 0.096) 0px 8px 24px;
 }
 
 #container {
     display: flex;
     flex-basis: 200px;
     flex-wrap: wrap;
-    gap:1em;
     margin-top: 30px
 }
 
@@ -51,7 +58,7 @@ body {
     position: absolute;
     left: 8px;
     width: 16px;
-    background: #fb2f2f;
+    background: #5e92ce;
     animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
   }
   .lds-facebook div:nth-child(1) {
@@ -74,5 +81,19 @@ body {
     50%, 100% {
       top: 24px;
       height: 32px;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .card {
+      width: 33.3% !important;
+      min-width: calc(33.3% - 10px) !important;
+      max-width: calc(33.3% - 10px) !important;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .card {
+      width: 25% !important;
+      min-width: calc(25% - 10px) !important;
+      max-width: calc(25% - 10px) !important;
     }
   }
